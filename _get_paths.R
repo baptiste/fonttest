@@ -9,8 +9,8 @@ codify <- function(code = '1D43A'){
   message(code)
   
   a <- xml2::read_xml(glue::glue('{code}.svg'))
-  # xml_child(a)
-  # get third g
+  
+  # get second g (third element)
   g2 <- as_list(xml_contents(xml_children(a)[3]))
   paths <- vapply(g2, attr,'a', "d") # extract paths
   
@@ -19,7 +19,7 @@ codify <- function(code = '1D43A'){
   d <- paste(paths, collapse=' ')
   
   list(code=glue::glue("0x{code}"),
-       position = c(.75, 0.0, 0.55), 
+       box = c(.75, 0.0, 0.55), 
        p =  glue::glue("@d@-",.open = '@', .close= '@'))
 }
 
@@ -31,9 +31,8 @@ jsonlite::write_json(all, path = 'glyphs.json',
 library(glue)
 
 as_string <- function(el){
-  glue("@el$code@ : [@el$position[1]@,@el$position[2]@,@el$position[3]@, {p: '@el$p@'}]", .open='@',.close='@')
+  glue("@el$code@ : [@el$box[1]@,@el$box[2]@,@el$box[3]@, {p: '@el$p@'}]", .open='@',.close='@')
 }
 
-cat(glue_collapse(lapply(all, as_string), sep=',\n', last=''), file = 'pbcopy')
+cat(glue_collapse(lapply(all, as_string), sep=',\n', last=''))
 
-cat(paste0('\\',names(lf)))
