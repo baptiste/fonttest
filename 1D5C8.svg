@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="12em" height="11.4em" style="margin: auto; margin-top: 10%; vertical-align:-0.2em" viewBox="-50 -25 600 520" xmlns="http://www.w3.org/2000/svg">
+  <style>path { fill: none; stroke-width: 5px;}</style>
+  <g transform="translate(0,460) scale(1,-1)">
+    <path d="M0 -35L0 485" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M500 -35L500 485" stroke-width="5px" stroke="blue" style="stroke:blue; fill:none;pointer-events: none;"/>
+    <path d="M-25 460L525 460" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-25 -10L525 -10" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-50 0L550 0" stroke-width="5px" stroke="red" style="stroke:red;pointer-events: none;"/>
+    <path d="M28 222Q28 323 95 391T244 460Q275 460 281 459Q364 445 417 377T471 219Q471 124 408 57T250 -10Q158 -10 93 57T28 222ZM377 230Q377 277 364 310T328 358T287 379T248 385Q233 385 219 382T186 369T155 342T132 297T122 230Q122 146 159 108T250 69H253Q263 69 274 70T305 81T339 106T365 154T377 230Z" style="stroke:grey; fill:lightgrey; opacity:0.8;pointer-events: none;"/>
+  </g>
+  <g transform="translate(0,460) scale(1,-1)" fill="none" stroke="black" stroke-width="20">
+    <path d="M 244.147 421.253 C 123.391 420.271 73.649 303.878 75.181 213.598 C 76.765 120.197 148.9 20.987 255.428 22.082 C 351.688 23.071 423.69 115.048 423.417 213.97 C 423.117 322.475 371.597 415.297 250.738 419.98" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+  </g>
+</svg>

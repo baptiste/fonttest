@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="11.78em" height="15.88em" style="margin: auto; margin-top: 10%" viewBox="-50 -25 589 744" xmlns="http://www.w3.org/2000/svg">
+  <style>path { fill: none; stroke-width: 5px;}</style>
+  <g transform="translate(0,694) scale(1,-1)">
+    <path d="M0 -25L0 719" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M489 -25L489 719" stroke-width="5px" stroke="blue" style="stroke:blue; fill:none;pointer-events: none;"/>
+    <path d="M-25 694L514 694" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-25 0L514 0" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-50 0L539 0" stroke-width="5px" stroke="red" style="stroke:red;pointer-events: none;"/>
+    <path d="M76 0V694H163V257L340 444H449L286 272L292 263Q296 259 378 138T463 12L471 0H372L309 92Q294 114 277 139T250 179T237 198L228 211L160 139V0H76Z" style="stroke:grey; fill:lightgrey; opacity:0.8;pointer-events: none;"/>
+  </g>
+  <g transform="translate(0,694) scale(1,-1)" fill="none" stroke="black" stroke-width="20">
+    <path d="M 116.07 691.86 C 116.07 635.371 116.07 490.109 116.07 345.253 C 116.07 200.397 116.07 55.948 116.07 1.085" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+    <path d="M 123.07 162.654 C 175.93 216.989 212.215 255.855 246.736 290.623 C 290.747 334.948 351.203 398.378 395.435 443.28" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+    <path d="M 233.351 265.131 C 253.011 237.084 297.407 174.192 315.536 147.138 C 335.895 116.758 390.789 32.874 413.658 1.085" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+  </g>
+</svg>

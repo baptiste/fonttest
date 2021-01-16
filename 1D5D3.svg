@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="10.7em" height="10.88em" style="margin: auto; margin-top: 10%" viewBox="-50 -25 535 494" xmlns="http://www.w3.org/2000/svg">
+  <style>path { fill: none; stroke-width: 5px;}</style>
+  <g transform="translate(0,444) scale(1,-1)">
+    <path d="M0 -25L0 469" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M435 -25L435 469" stroke-width="5px" stroke="blue" style="stroke:blue; fill:none;pointer-events: none;"/>
+    <path d="M-25 444L460 444" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-25 0L460 0" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-50 0L485 0" stroke-width="5px" stroke="red" style="stroke:red;pointer-events: none;"/>
+    <path d="M42 370V444H400V395L156 76L279 77H402V0H28V51L273 371L157 370H42Z" style="stroke:grey; fill:lightgrey; opacity:0.8;pointer-events: none;"/>
+  </g>
+  <g transform="translate(0,444) scale(1,-1)" fill="none" stroke="black" stroke-width="20">
+    <path style="stroke: rgb(255, 1, 1); stroke-width: 11px;" d="M 42.1 410.509 L 204.448 409.895 L 366.795 409.282 L 212.203 220.946 L 57.612 32.61 L 229.886 33.041 L 402.16 33.472"/>
+  </g>
+</svg>

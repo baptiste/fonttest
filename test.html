@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content="width=device-width, initial-scale=10" name="viewport"/>
+<title>SVG Stroke Fonts</title>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="svg-stroke-fonts.js"></script>
+<style>
+body{font-size: 50px;};
+  
+</style>
+<script>
+MathJax = {
+  startup: {
+    ready() {
+      //
+      //  Subclass the TeXFont to include the needed styles and font data 
+      //    given in the objects above.
+      //
+      const {TeXFont} = MathJax._.output.svg.fonts.tex_ts;
+      class StrokeFont extends TeXFont {
+        constructor(options) {
+          super(options);
+          this.styles = StrokeSVG.styles;
+          const chars = StrokeSVG.chars;
+          for (const variant of Object.keys(chars)) {
+            this.defineChars(variant, chars[variant]);
+          }
+        }
+      }
+      //
+      //  Use the new fonts for the SVG font
+      //
+      MathJax.config.svg.font = new StrokeFont();
+      
+      //
+      //  Override the SVGWrapper's charNode() method to look for
+      //    stroke paths (ones ending in '-') and remove the '-' (and the 'Z'
+      //    that the original routine added automatically), mark them with
+      //    the 'data-mjx-no-z' attribute, and add the 'data-mjx-variant' 
+      //    attribute, if needed.
+      //  This allows other characters to be rendered as normal, so you 
+      //    can mix stroke glyphs with traditional ones freely.
+      //    
+      const {SVGWrapper} = MathJax._.output.svg.Wrapper;
+      const CHARNODE = SVGWrapper.prototype.charNode;
+      SVGWrapper.prototype.charNode = function (variant, C, path) {
+        const node = CHARNODE.call(this, variant, C, path.replace(/-Z$/, ''));
+        if (path.match(/-Z$/)) {
+          const adaptor = this.adaptor;
+          adaptor.setAttribute(node, 'data-mjx-no-z', true);
+          const data = this.getVariantChar(variant, parseInt(C, 16))[3];
+          if (data.v) {
+            adaptor.setAttribute(node, 'data-mjx-variant', data.v);
+          }
+        }
+        return node;
+      }
+      
+      //
+      //  Override CSS for path stroke-width to be only for non-stroke glyphs3907
+      //
+      const {SVGTextNode} = MathJax._.output.svg.Wrappers.TextNode;
+      SVGTextNode.styles['.MathJax path[d$=Z]'] = SVGTextNode.styles['.MathJax path'];
+      delete SVGTextNode.styles['.MathJax path'];
+
+      //
+      // Do the usual startup
+      //
+      MathJax.startup.defaultReady();
+    }
+  }
+};
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+
+Testing replacements:
+
+$$\mathsf{abcdefghijklmnopqrstuvwxyz}$$
+</body>
+</html>

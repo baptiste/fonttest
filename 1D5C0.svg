@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="12em" height="15.22em" style="margin: auto; margin-top: 10%; vertical-align:-4.12em" viewBox="-50 -25 600 711" xmlns="http://www.w3.org/2000/svg">
+  <style>path { fill: none; stroke-width: 5px;}</style>
+  <g transform="translate(0,455) scale(1,-1)">
+    <path d="M0 -231L0 480" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M500 -231L500 480" stroke-width="5px" stroke="blue" style="stroke:blue; fill:none;pointer-events: none;"/>
+    <path d="M-25 455L525 455" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-25 -206L525 -206" stroke-width="5px" stroke="blue" style="stroke:blue;pointer-events: none;"/>
+    <path d="M-50 0L550 0" stroke-width="5px" stroke="red" style="stroke:red;pointer-events: none;"/>
+    <path d="M55 286Q55 357 105 406T224 455Q280 455 323 421L322 423L318 427Q318 428 339 434T396 448T465 455H471L478 416L485 377Q484 377 474 379T445 383T401 385Q397 385 391 385T381 384L362 383L357 387Q358 386 364 375T375 354T384 325T389 287Q389 217 340 168T221 119Q178 119 138 142Q133 145 131 143Q125 131 125 117Q125 82 155 72L227 71Q230 71 251 71T280 71T310 69T343 65T373 57T403 46T428 30T449 7Q471 -26 471 -62V-71Q471 -136 384 -178Q326 -206 250 -206Q159 -206 102 -172T30 -92Q28 -84 28 -68T31 -37T40 -12T52 7T64 21T75 31T82 38Q60 68 60 106Q60 145 80 180L86 189L80 199Q55 240 55 286ZM304 233T304 287T279 362T220 383Q189 383 165 361T140 287Q140 243 161 217T220 191Q253 191 278 212ZM250 -134Q298 -134 331 -122T375 -96T387 -69Q387 -21 306 -7Q288 -5 216 -5Q161 -5 153 -7Q146 -9 139 -13T122 -31T113 -66Q113 -75 113 -80T127 -97T166 -121Q203 -134 250 -134Z" style="stroke:grey; fill:lightgrey; opacity:0.8;pointer-events: none;"/>
+  </g>
+  <g transform="translate(0,455) scale(1,-1)" fill="none" stroke="black" stroke-width="20">
+    <path d="M 98.918 296.59 C 100.68 381.152 166.767 418.781 228.659 415.643 C 310.723 411.482 339.044 355.971 343.802 297.645 C 350.647 213.737 308.672 162.974 238.319 155.162 C 142.875 144.564 99.172 237.076 101.809 293.542" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+    <path d="M 129.136 194.115 C 71.493 126.783 106.444 66.276 118.969 45.527 C 131.631 24.55 251.538 41.05 273.311 39.865 C 412.14 32.312 429.36 -20.612 428.385 -66.936 C 426.961 -134.616 320.095 -173.32 247.007 -171.822 C 103.363 -168.878 69.416 -95.905 69.727 -56.923 C 70.035 -18.256 135.454 39.839 135.454 32.984" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+    <path d="M 324.503 396.723 C 362.369 429.455 480.564 417.36 476.658 417.36" style="stroke: rgb(203, 33, 33); fill: none; stroke-width: 29px;"/>
+  </g>
+</svg>
